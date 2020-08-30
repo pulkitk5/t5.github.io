@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template 5</title>
+
+    <script
+      src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+      data-auto-replace-svg="nest"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        font-family: "Roboto Slab", serif;
+      }
+      header {
+        width: 100%;
+        height: 500px;
+        background: url("bg.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .menu-bar a {
+        z-index: 1000;
+        position: fixed;
+        left: -95px;
+        transition: 0.3s;
+        padding: 10px;
+        width: 115px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+      }
+
+      .menu-bar a i {
+        float: right;
+        font-size: 18px;
+      }
+
+      .menu-bar a:hover {
+        left: 0;
+      }
+
+      #home {
+        background: rgb(127, 180, 120);
+        top: 20px;
+      }
+
+      #about {
+        background: rgb(31, 90, 23);
+        top: 70px;
+      }
+
+      #contact {
+        background: rgb(127, 180, 120);
+        top: 120px;
+      }
+
+      #spprt {
+        background: rgb(31, 90, 23);
+        top: 170px;
+      }
+
+      .sm-bar a {
+        z-index: 1000;
+        position: fixed;
+        right: -20px;
+        transition: 0.3s;
+        padding: 10px;
+        width: 40px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        border-radius: 5px 0 0 5px;
+      }
+
+      .sm-bar a:hover {
+        right: 0;
+      }
+
+      .sm-bar a i {
+        float: left;
+        font-size: 18px;
+      }
+
+      #fb {
+        background: rgb(31, 90, 23);
+        top: 20px;
+      }
+
+      #ig {
+        background: rgb(127, 180, 120);
+        top: 70px;
+      }
+
+      #tw {
+        background: rgb(31, 90, 23);
+        top: 120px;
+      }
+
+      .text h1 {
+        color: white;
+        text-align: center;
+        line-height: 500px;
+        font-size: 50px;
+      }
+
+      .main {
+        width: 50%;
+        height: auto;
+      }
+
+      .c1,
+      .c2,
+      .c3 {
+        height: 500px;
+        width: 45%;
+        position: absolute;
+      }
+
+      .c1 {
+        color: gray;
+        z-index: -1;
+        top: 550px;
+        left: 10%;
+        background: rgba(219, 219, 219, 0.4);
+      }
+
+      .c2 {
+        z-index: 1;
+        top: 950px;
+        left: 25%;
+        border: 0.1px solid black;
+      }
+
+      .c2 img {
+        height: 100%;
+        width: 100%;
+      }
+
+      .c3 {
+        color: gray;
+        z-index: -1;
+        top: 1350px;
+        left: 45%;
+        background: rgba(219, 219, 219, 0.4);
+      }
+
+      .txt-c1 {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 100px;
+        overflow-wrap: inherit;
+      }
+
+      .txt-c3 {
+        text-align: center;
+        padding: 20px;
+        margin-top: 100px;
+      }
+
+      .txt-c1 h1,
+      .txt-c3 h1 {
+        font-size: 40px;
+      }
+
+      .txt-c1 p,
+      .txt-c3 p {
+        font-size: 20px;
+        padding: 10px;
+        text-align: justify;
+      }
+
+      @media screen and (max-width: 500px) {
+        .c1,
+        .c2,
+        .c3 {
+          height: 350px;
+          width: 60%;
+        }
+
+        .c2 {
+          height: 300px;
+          top: 850px;
+          left: 20%;
+        }
+
+        .c3 {
+          top: 1100px;
+          left: 30%;
+        }
+
+        .txt-c3 {
+          margin-top: 50px;
+        }
+        .txt-c1 p,
+        .txt-c3 p {
+          font-size: 10px;
+        }
+
+        .txt-c1 h1,
+        .txt-c3 h1 {
+          font-size: 25px;
+        }
+
+        .text h1 {
+          font-size: 40px;
+        }
+
+        .sm-bar a {
+          right: -25px;
+        }
+
+        .menu-bar a {
+          right: -20px;
+          width: 110px;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .c1,
+        .c2,
+        .c3 {
+          width: 80%;
+        }
+
+        .c1 {
+          top: 525px;
+          left: 5%;
+        }
+
+        .c2 {
+          top: 825px;
+          left: 10%;
+          height: 250px;
+        }
+
+        .c3 {
+          top: 1025px;
+          left: 15%;
+        }
+
+        .txt-c3 {
+          margin-top: 50px;
+        }
+        .txt-c1 p,
+        .txt-c3 p {
+          font-size: 10px;
+        }
+
+        .txt-c1 h1,
+        .txt-c3 h1 {
+          font-size: 25px;
+        }
+
+        .text h1 {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="text">
+        <h1>Some text here...</h1>
+      </div>
+      <div class="menu-bar">
+        <a href="#" id="home">HOME <i class="fas fa-home"></i></a>
+        <a href="#" id="about">ABOUT <i class="fas fa-info-circle"></i></a>
+        <a href="#" id="contact">CONTACT <i class="far fa-envelope"></i></a>
+        <a href="#" id="spprt">SUPPORT <i class="fas fa-user-cog"></i></a>
+      </div>
+
+      <div class="sm-bar">
+        <a href="#" id="fb"><i class="fab fa-facebook"></i></a>
+        <a href="#" id="ig"><i class="fab fa-instagram"></i></a>
+        <a href="#" id="tw"><i class="fab fa-twitter"></i></a>
+      </div>
+    </header>
+
+    <main>
+      <div class="main">
+        <div class="c1">
+          <div class="txt-c1">
+            <h1>Heading 1</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+        <div class="c2">
+          <img src="img.jpg" alt="..." />
+        </div>
+        <div class="c3">
+          <div class="txt-c3">
+            <h1>Heading 2</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
